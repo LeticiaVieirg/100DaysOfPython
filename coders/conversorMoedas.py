@@ -22,4 +22,4 @@ def conversao (tipoMoeda):
       valorAproximado=round(valor, 2)
       print("O valor convertido e:", valorAproximado)
 
-conversao(tipoMoeda)
+conversao(tipoMoeda) 
