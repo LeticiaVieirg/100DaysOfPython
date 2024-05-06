@@ -1,4 +1,4 @@
-print("----------" "\n1 - Dolar", "\n2 - Euro", "\n3 - Libra", \n ----------")
+print("----------" "\n1 - Dolar", "\n2 - Euro", "\n3 - Libra", "\n ----------")
 
 tipoMoeda=int(input("Informe o tipo da moeda para converter: "))
 
