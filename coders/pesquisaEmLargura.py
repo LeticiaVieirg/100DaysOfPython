@@ -28,6 +28,6 @@ def pesquisar(nome):
        else:
          filaPesquisa+=grafo[pessoa]
          pessoasVerificadas.append(pessoa)   
-   return False
+     return False
 
 pesquisa('Clara')
