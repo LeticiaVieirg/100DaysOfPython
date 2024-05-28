@@ -1,7 +1,3 @@
-#ALGORITMOS GULOSOS
-# Em cada etapa, escolhemos a solucao ideial para que no final, a solucao global ideal esta formada
-# De facil compreensao e rapida execucao
-
 #List of states to include and creat hash table 
 states_include=set(["ab", "cd", "ef", "gh", "ij", "kl", "mn","op"])
 stations={}
@@ -11,7 +7,7 @@ stations[("Ithree")]=set(["mn", "cd", "kl"])
 stations[("Ifour")]=set(["cd", "ef"])
 stations[("Ifive")]=set(["kl", "gh"])
 
-#Store the final set of stations, best station and states for covered
+#Store the final set of stations
 stations_end=set()
 
 #As long as states need coverage
