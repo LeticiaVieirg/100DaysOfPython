@@ -1,4 +1,5 @@
 qtd_interacao = int(input("Informe o termo da Fibonacci que você deseja saber: "))
+
 contador = 2
 valor1 = 0
 valor2 = 1
