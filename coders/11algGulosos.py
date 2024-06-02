@@ -19,6 +19,7 @@ while states_include:
       if len(covered)>len(states_covered):
         best_station=station
         states_covered=covered
+        
 states_include-=states_covered
 stations_end.add(best_station)
 
