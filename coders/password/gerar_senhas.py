@@ -1,3 +1,5 @@
+#limite de 1-12 caracteres 
+
 import random
 import string
 
