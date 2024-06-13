@@ -1,0 +1,40 @@
+import random
+
+print('Bem vindo ao jogo de cara ou coroa')
+
+acertos = 0
+erros = 0
+
+while True:
+    def coin():
+        if random.randint(0, 1) == 0:
+            return 'cara'
+        else:
+            return 'coroa'
+
+    escolha = input('\n========CARA OU COROA ========\n Moeda lançada...\n Vai cair cara ou coroa?\n').lower()
+    moeda = coin()
+
+    if escolha == moeda:
+        print(f'Caiu {escolha}, parabens voce acertou!')
+        print('==================================')
+        acertos = acertos + 1
+    else:
+        print(f'AAAAAAAA, caiu {moeda}, voce errou!')
+        print('=================================')
+        erros = erros + 1
+
+    resposta = input('Deseja jogar novamente: ').lower()
+    resp_sim=["sim", "si", "s"]
+    resp_nao=["nao", "não", "no", "n"]
+
+    if resposta in resp_sim:
+        print('Vamos jogar novamente!')
+    elif resposta in resp_nao:
+        break
+    else:
+        print("Reposta invalida! Digite sim ou nao: ")
+
+print('\n======= DADOS FINAIS DO JOGO ========')
+print(f'Acertos:{acertos}\nErros:{erros}')
+print('=====================================\n')
