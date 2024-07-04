@@ -3,7 +3,7 @@ def recursive_factorial(n):
     return 1
   else:
     return n * recursive_factorial(n - 1)
-print(f"O fatorial de {numero} é {resultado}")
+print(f"O fatorial de {number} é {resultado}")
 
 number=int(input("Enter a number: "))
 factorial=recursive_factorial(number)
