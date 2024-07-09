@@ -21,9 +21,9 @@ def decimalRoman(number){
     1="I"
   }
 
-  for value, sybol in romanMap.items():
+  for value, symbol in romanMap.items():
     while number>=value:
-      romanNumeral+=sybol
+      romanNumeral+=symbol
       number-=value
   return romanNumeral
  
