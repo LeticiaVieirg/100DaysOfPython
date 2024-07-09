@@ -1,4 +1,4 @@
-def decimalRoman(int number){
+def decimalRoman(number){
 
   romanNumeral=""
   
