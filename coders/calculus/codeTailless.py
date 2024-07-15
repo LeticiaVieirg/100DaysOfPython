@@ -1,7 +1,7 @@
-int fatorialSemCauda(int n) {
+int factorial_tailless(int n) {
   if (n == 0) {
     return 1;
   } else {
-    return n * fatorialSemCauda(n - 1);
+    return n * factorial_tailless(n - 1);
   }
 }
