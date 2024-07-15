@@ -1,5 +1,5 @@
-def fatorial_com_cauda(n, acumulador=1):
+def factorial_tail(n, accumulator=1):
   if n == 0:
-    return acumulador
+    return accumulator
   else:
-    return fatorial_com_cauda(n - 1, n * acumulador)
+    return factorial_tail(n - 1, n * accumulator)
