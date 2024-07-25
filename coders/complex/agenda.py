@@ -45,7 +45,7 @@ def read_details_contact():
     return phone_number, email
 
 
-def incluide_edite_contact (contact, phone_number, email):
+def include_edite_contact (contact, phone_number, email):
     AGENDA[contact] = {
         'Phone number': phone_number,
         'Email': email,
