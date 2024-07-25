@@ -37,3 +37,20 @@ def edit_contact(contact, phone_number, email):
         'Phone Number': phone_number,
         'Email': email,
     }
+    
+
+def read_details_contact():
+    phone_number = input('Enter a number: ')
+    email = input('Enter a email: ')
+    return phone_number, email
+
+
+def incluide_edite_contact (contact, phone_number, email):
+    AGENDA[contact] = {
+        'Phone number': phone_number,
+        'Email': email,
+}
+    save_agenda()
+    print(f'===SUCESS==='
+          f'\nContato: {contact.upper()} Added successfully! ')
+    print('-' *20)
