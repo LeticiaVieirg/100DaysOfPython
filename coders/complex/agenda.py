@@ -54,3 +54,34 @@ def include_edite_contact (contact, phone_number, email):
     print(f'===SUCESS==='
           f'\nContato: {contact.upper()} Added successfully! ')
     print('-' *20)
+
+def delete_contact(contact):
+    try:
+        AGENDA.pop(contact)
+        save_agenda()
+        print('='*20)
+        print(f'Contact {contact} deleted sucessfully!')
+        print('='*20)
+        
+    except KeyError:
+        print('='*20)
+        print('Non-existent contact.')
+    except Exception as error:
+        print('Unexpeted error.')
+        print(error)
+
+def export_contact(file_agenda):
+    try: 
+        with open(file_agenda, 'w') as file:
+            for contact in AGENDA:
+                phone_number=AGENDA[contact]['Phone Number']
+                email=AGENDA[contact]['Email']
+                file.write(f'{contact}, {phone_number}, {email}\n')
+            print('Exported Agenda successfully!')
+    except Exception as error:
+        print('Error exporting contacts.')
+        print(error)
+
+
+def save_agenda():
+    export_contacts('database.csv')
