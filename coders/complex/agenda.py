@@ -70,7 +70,7 @@ def delete_contact(contact):
         print('Unexpeted error.')
         print(error)
 
-def export_contact(file_agenda):
+def export_contacts(file_agenda):
     try: 
         with open(file_agenda, 'w') as file:
             for contact in AGENDA:
