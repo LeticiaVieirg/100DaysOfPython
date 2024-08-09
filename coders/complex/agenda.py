@@ -133,11 +133,11 @@ def menu():
     print('1 - Show contacts in agenda')
     print('2 - Search contact')
     print('3 - Include contact')
-    print('4 - Edit contact)
+    print('4 - Edit contact')
     print('5 - Delete contact')
     print('6 - Export contact for CSV. ')
     print('7 - Import contact for CSV. ')
-    print('0 - Close Agenda)
+    print('0 - Close Agenda')
     print('-' * 20)
 
 
